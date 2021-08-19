@@ -20,8 +20,8 @@ export default class Page extends React.Component {
     render() {
         return (
             <Layout {...this.props}>
-            <article className="page py-5 py-sm-6">
-            	<div className="container container--medium">
+            <div className="container pt-6 pb-6">
+            	<div className="section">
             		<header className="page__header">
             			<h1 className="page__title">{_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
             		</header>
@@ -34,7 +34,7 @@ export default class Page extends React.Component {
                         />
                     </>
             	</div>
-            </article>
+            </div>
             </Layout>
         );
     }
