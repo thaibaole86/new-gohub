@@ -22,6 +22,7 @@ export default class Page extends React.Component {
             <Layout {...this.props}>
             <div className="container">
             	<div className="section">
+                    <br>
             		<header className="page__header">
             			<h1 className="page__title">{_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
             		</header>
