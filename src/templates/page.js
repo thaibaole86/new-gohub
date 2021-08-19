@@ -4,6 +4,7 @@ import {graphql} from 'gatsby';
 
 import {Layout} from '../components/index';
 import {htmlToReact} from '../utils';
+import {ProductBrowser} from '@ecwid/gatsby-plugin-ecwid'
 
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
@@ -27,6 +28,11 @@ export default class Page extends React.Component {
             		<div className="page__body text-block">
             			{htmlToReact(_.get(this.props, 'pageContext.html', null))}
             		</div>
+                    <>
+                    <ProductBrowser
+                     storeId="64495011"
+                        />
+                    </>
             	</div>
             </article>
             </Layout>
