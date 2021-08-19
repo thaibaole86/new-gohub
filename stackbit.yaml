@@ -1,6 +1,7 @@
 stackbitVersion: ~0.3.0
 ssgName: gatsby
-ssgVersion: 2.3.30
+ssgVersion: 3.11.1
+nodeVersion: 12assets
 buildCommand: npm run build
 publishDir: public
 staticDir: static
