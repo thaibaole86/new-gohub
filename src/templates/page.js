@@ -27,6 +27,11 @@ export default class Page extends React.Component {
             		<div className="page__body text-block">
             			{htmlToReact(_.get(this.props, 'pageContext.html', null))}
             		</div>
+                    <>
+      <ProductBrowser
+        storeId="64495011"
+      />
+    </>
             	</div>
             </article>
             </Layout>
